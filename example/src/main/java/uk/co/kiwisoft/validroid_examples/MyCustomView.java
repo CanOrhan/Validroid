@@ -6,13 +6,11 @@ package uk.co.kiwisoft.validroid_examples;
 public class MyCustomView {
     private String myData = "";
 
-    public MyCustomView(){}
-
-    public MyCustomView(String initialString){
+    public MyCustomView(String initialString) {
         this.myData = initialString;
     }
 
-    public String getMyData(){
+    public String getMyData() {
         return myData;
     }
 }

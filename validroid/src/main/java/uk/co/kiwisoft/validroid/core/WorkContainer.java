@@ -29,7 +29,10 @@ public class WorkContainer<C, T> {
     // Handles errors raised by the validator.
     private final IHandler<C> handler;
 
-    public WorkContainer(C dataContainer, IProvider<T, C> provider, IValidator<T> validator, IHandler<C> handler) {
+    public WorkContainer(C dataContainer,
+                         IProvider<T, C> provider,
+                         IValidator<T> validator,
+                         IHandler<C> handler) {
         this.dataContainer = new WeakReference<C>(dataContainer);
         this.dataProvider = provider;
         this.validator = validator;

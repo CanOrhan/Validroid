@@ -34,15 +34,48 @@
         </developer>
     </developers>
 
+    <organization>
+        <name>Kiwisoft Ltd</name>
+        <url>http://kiwisoft.co.uk</url>
+    </organization>
+
     <scm>
         <connection>scm:git:git@github.com:CanOrhan/Validroid.git</connection>
         <developerConnection>scm:git:git@github.com:CanOrhan/Validroid.git</developerConnection>
         <url>git@github.com:CanOrhan/Validroid.git</url>
     </scm>
 
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/CanOrhan/Validroid/issues</url>
+    </issueManagement>
+
     <modules>
         <module>validroid</module>
         <module>example</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.10</version>
+                <configuration>
+                    <failsOnError>true</failsOnError>
+                    <consoleOutput>true</consoleOutput>
+                    <configLocation>checkstyle.xml</configLocation>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>checkstyle</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

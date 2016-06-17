@@ -1,5 +1,7 @@
 package uk.co.kiwisoft.validroid.core;
 
+import uk.co.kiwisoft.validroid.core.handlers.IHandler;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,10 +33,13 @@ public class ValidationRunner {
      */
     public boolean validate() {
         boolean isEverythingOk = true;
-        for(WorkContainer container : workPool) {
+        for (WorkContainer container : workPool) {
             Object input = container.getDataProvider().provideData(container.getDataContainer());
-            if(!container.getValidator().isValid(input)){
-                container.getHandler().handleErrorMessages(container.getValidator().getErrorMessages());
+            if (!container.getValidator().isValid(input)) {
+                String[] errorMessages = container.getValidator().getErrorMessages();
+                IHandler handler = container.getHandler();
+
+                handler.handleErrorMessages(errorMessages);
                 isEverythingOk = false;
             }
         }
