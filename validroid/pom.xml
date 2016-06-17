@@ -23,7 +23,7 @@
                     <configuration>
                         <compilerArgument>-proc:none</compilerArgument>
                     </configuration>
-            </plugin>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
