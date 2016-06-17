@@ -12,13 +12,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>example-project</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>${global.version}</version>
 
     <dependencies>
         <dependency>
             <groupId>uk.co.kiwisoft</groupId>
             <artifactId>validroid</artifactId>
-            <version>0.1-SNAPSHOT</version>
+            <version>${global.version}</version>
         </dependency>
     </dependencies>
 

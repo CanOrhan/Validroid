@@ -1,6 +1,6 @@
 package uk.co.kiwisoft.validroid_examples;
 
-import uk.co.kiwisoft.validroid.core.ValidationRunner;
+import uk.co.kiwisoft.validroid.core.CoreValidationRunner;
 import uk.co.kiwisoft.validroid.core.WorkContainer;
 import uk.co.kiwisoft.validroid_examples.validators.EmailValidator;
 import uk.co.kiwisoft.validroid_examples.validators.LengthValidator;
@@ -21,7 +21,7 @@ public class Main {
                         new LengthValidator(),
                         new MyHandler());
 
-        ValidationRunner vr = new ValidationRunner();
+        CoreValidationRunner vr = new CoreValidationRunner();
         vr.addWork(emailWorkContainer);
         vr.addWork(lengthWorkContainer);
 

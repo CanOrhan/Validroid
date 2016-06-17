@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ToDo: Explain the scope of the class
+ * A basic implementation of {@see uk.co.kiwisoft.validroid.core.IValidationRunner}
  */
-public class ValidationRunner {
+public class CoreValidationRunner implements IValidationRunner {
     private final List<WorkContainer> workPool = new ArrayList<WorkContainer>();
 
     /**
