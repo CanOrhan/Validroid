@@ -31,9 +31,10 @@ public class CoreValidationRunner implements IValidationRunner {
      * Synchronously runs each validation task.
      * @return true if all fields are valid.
      */
+    @SuppressWarnings("unchecked")
     public boolean validate() {
         boolean isEverythingOk = true;
-        for (WorkContainer container : workPool) {
+        for (final WorkContainer container : workPool) {
             Object input = container.getDataProvider().provideData(container.getDataContainer());
             if (!container.getValidator().isValid(input)) {
                 String[] errorMessages = container.getValidator().getErrorMessages();
