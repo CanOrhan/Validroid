@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A basic implementation of {@see uk.co.kiwisoft.validroid.core.IValidationRunner}
+ * A basic implementation of @see uk.co.kiwisoft.validroid.core.IValidationRunner
  */
 public class CoreValidationRunner implements IValidationRunner {
     private final List<WorkContainer> workPool = new ArrayList<WorkContainer>();
