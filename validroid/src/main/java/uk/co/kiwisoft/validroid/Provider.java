@@ -1,8 +1,8 @@
-package uk.co.kiwisoft.validroid.providers;
+package uk.co.kiwisoft.validroid;
 
 /**
  * ToDo: Explain the scope of the class
  */
-public interface IProvider<T, V> {
+public interface Provider<T, V> {
     T provideData(V container);
 }

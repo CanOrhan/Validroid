@@ -1,14 +1,12 @@
 package uk.co.kiwisoft.validroid;
 
-import uk.co.kiwisoft.validroid.handlers.IHandler;
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A basic implementation of @see uk.co.kiwisoft.validroid.IValidationRunner
+ * A basic implementation of @see uk.co.kiwisoft.validroid.ValidationRunner
  */
-public class CoreValidationRunner implements IValidationRunner {
+public class SimpleValidationRunner implements ValidationRunner {
     private final List<WorkContainer> workPool = new ArrayList<WorkContainer>();
 
     /**
@@ -38,7 +36,7 @@ public class CoreValidationRunner implements IValidationRunner {
             Object input = container.getDataProvider().provideData(container.getDataContainer());
             if (!container.getValidator().isValid(input)) {
                 String[] errorMessages = container.getValidator().getErrorMessages();
-                IHandler handler = container.getHandler();
+                Handler handler = container.getHandler();
 
                 handler.handleErrorMessages(errorMessages);
                 isEverythingOk = false;
