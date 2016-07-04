@@ -1,4 +1,4 @@
-package uk.co.kiwisoft.validroid.core.handlers;
+package uk.co.kiwisoft.validroid.handlers;
 
 /**
  * ToDo: Explain the scope of the class

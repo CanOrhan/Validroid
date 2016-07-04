@@ -1,7 +1,7 @@
 package uk.co.kiwisoft.validroid_examples;
 
 
-import uk.co.kiwisoft.validroid.core.providers.IProvider;
+import uk.co.kiwisoft.validroid.providers.IProvider;
 
 /**
  * ToDo: Explain the scope of the class

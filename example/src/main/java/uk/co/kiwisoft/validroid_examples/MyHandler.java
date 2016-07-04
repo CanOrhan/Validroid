@@ -1,6 +1,6 @@
 package uk.co.kiwisoft.validroid_examples;
 
-import uk.co.kiwisoft.validroid.core.handlers.IHandler;
+import uk.co.kiwisoft.validroid.handlers.IHandler;
 
 /**
  * ToDo: Explain the scope of the class

@@ -3,7 +3,7 @@ package uk.co.kiwisoft.validroid_examples.validators;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import uk.co.kiwisoft.validroid.core.validators.IValidator;
+import uk.co.kiwisoft.validroid.validators.IValidator;
 
 /**
  * ToDo: Explain the scope of the class

@@ -1,12 +1,12 @@
-package uk.co.kiwisoft.validroid.core;
+package uk.co.kiwisoft.validroid;
 
-import uk.co.kiwisoft.validroid.core.handlers.IHandler;
+import uk.co.kiwisoft.validroid.handlers.IHandler;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A basic implementation of @see uk.co.kiwisoft.validroid.core.IValidationRunner
+ * A basic implementation of @see uk.co.kiwisoft.validroid.IValidationRunner
  */
 public class CoreValidationRunner implements IValidationRunner {
     private final List<WorkContainer> workPool = new ArrayList<WorkContainer>();

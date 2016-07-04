@@ -1,4 +1,4 @@
-package uk.co.kiwisoft.validroid.core;
+package uk.co.kiwisoft.validroid;
 
 import java.util.List;
 

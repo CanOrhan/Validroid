@@ -1,4 +1,4 @@
-package uk.co.kiwisoft.validroid.core.validators;
+package uk.co.kiwisoft.validroid.validators;
 
 /**
  * ToDo: Explain the scope of the class

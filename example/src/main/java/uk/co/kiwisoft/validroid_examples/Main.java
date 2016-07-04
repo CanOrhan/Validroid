@@ -1,7 +1,7 @@
 package uk.co.kiwisoft.validroid_examples;
 
-import uk.co.kiwisoft.validroid.core.CoreValidationRunner;
-import uk.co.kiwisoft.validroid.core.WorkContainer;
+import uk.co.kiwisoft.validroid.CoreValidationRunner;
+import uk.co.kiwisoft.validroid.WorkContainer;
 import uk.co.kiwisoft.validroid_examples.validators.EmailValidator;
 import uk.co.kiwisoft.validroid_examples.validators.LengthValidator;
 

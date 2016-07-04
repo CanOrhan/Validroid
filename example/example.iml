@@ -12,5 +12,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: uk.co.kiwisoft:validroid:0.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="validroid" />
   </component>
 </module>

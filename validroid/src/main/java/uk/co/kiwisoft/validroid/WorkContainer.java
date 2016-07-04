@@ -1,11 +1,11 @@
-package uk.co.kiwisoft.validroid.core;
+package uk.co.kiwisoft.validroid;
 
 
 import java.lang.ref.WeakReference;
 
-import uk.co.kiwisoft.validroid.core.handlers.IHandler;
-import uk.co.kiwisoft.validroid.core.providers.IProvider;
-import uk.co.kiwisoft.validroid.core.validators.IValidator;
+import uk.co.kiwisoft.validroid.handlers.IHandler;
+import uk.co.kiwisoft.validroid.providers.IProvider;
+import uk.co.kiwisoft.validroid.validators.IValidator;
 
 /**
  * Class that contains all the information needed to validate a view.
