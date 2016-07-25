@@ -1,11 +1,11 @@
 package uk.co.kiwisoft.validroid_examples;
 
-import uk.co.kiwisoft.validroid.core.handlers.IHandler;
+import uk.co.kiwisoft.validroid.Handler;
 
 /**
  * ToDo: Explain the scope of the class
  */
-public class MyHandler implements IHandler<MyCustomView> {
+public class MyHandler implements Handler {
 
     public void handleErrorMessages(String[] errors) {
         for (String msg : errors) {

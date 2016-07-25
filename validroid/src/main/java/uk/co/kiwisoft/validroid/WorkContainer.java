@@ -1,11 +1,7 @@
-package uk.co.kiwisoft.validroid.core;
+package uk.co.kiwisoft.validroid;
 
 
 import java.lang.ref.WeakReference;
-
-import uk.co.kiwisoft.validroid.core.handlers.IHandler;
-import uk.co.kiwisoft.validroid.core.providers.IProvider;
-import uk.co.kiwisoft.validroid.core.validators.IValidator;
 
 /**
  * Class that contains all the information needed to validate a view.
@@ -21,18 +17,18 @@ public class WorkContainer<C, T> {
     private final WeakReference<C> dataContainer;
 
     // Provides data of type T from container C.
-    private final IProvider<T, C> dataProvider;
+    private final Provider<T, C> dataProvider;
 
     // The validation that will run over the data.
-    private final IValidator<T> validator;
+    private final Validator<T> validator;
 
     // Handles errors raised by the validator.
-    private final IHandler<C> handler;
+    private final Handler handler;
 
     public WorkContainer(C dataContainer,
-                         IProvider<T, C> provider,
-                         IValidator<T> validator,
-                         IHandler<C> handler) {
+                         Provider<T, C> provider,
+                         Validator<T> validator,
+                         Handler handler) {
         this.dataContainer = new WeakReference<C>(dataContainer);
         this.dataProvider = provider;
         this.validator = validator;
@@ -43,15 +39,15 @@ public class WorkContainer<C, T> {
         return dataContainer.get();
     }
 
-    public IProvider<T, C> getDataProvider() {
+    public Provider<T, C> getDataProvider() {
         return dataProvider;
     }
 
-    public IValidator<T> getValidator() {
+    public Validator<T> getValidator() {
         return validator;
     }
 
-    public IHandler<C> getHandler() {
+    public Handler getHandler() {
         return handler;
     }
 }

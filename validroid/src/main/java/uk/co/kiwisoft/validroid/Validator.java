@@ -1,9 +1,9 @@
-package uk.co.kiwisoft.validroid.core.validators;
+package uk.co.kiwisoft.validroid;
 
 /**
  * ToDo: Explain the scope of the class
  */
-public interface IValidator<T> {
+public interface Validator<T> {
     boolean isValid(T input);
     String[] getErrorMessages();
 }

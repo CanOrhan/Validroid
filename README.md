@@ -10,12 +10,12 @@ Maven:
     <dependency>
       <groupId>uk.co.kiwisoft</groupId>
       <artifactId>validroid</artifactId>
-      <version>0.0.0</version>
+      <version>0.0.1</version>
     </dependency>
 
 Gradle:
 
-    compile 'uk.co.kiwisoft:validroid:0.0.0'
+    compile 'uk.co.kiwisoft:validroid:0.0.1'
 
 LICENCE
 ===
